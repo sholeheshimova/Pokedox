@@ -41,4 +41,22 @@ function PokemonTeam({ title, pokemons, totalExp, status }) {
   );
 }
 
+PokemonTeam.propTypes = {
+  title: PropTypes.string.isRequired,
+  pokemons: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      name: PropTypes.string.isRequired,
+      type: PropTypes.string.isRequired,
+      base_experience: PropTypes.number.isRequired,
+    })
+  ).isRequired,
+  totalExp: PropTypes.number.isRequired,
+  status: PropTypes.oneOf([
+    "WINNER",
+    "DEFEATED",
+    "DRAW",
+  ]).isRequired,
+};
+
 export default PokemonTeam;
