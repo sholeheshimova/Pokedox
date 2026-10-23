@@ -1,0 +1,179 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--color-bg);
+}
+
+.app {
+  min-height: 100vh;
+  padding: 40px 5%;
+  color: var(--color-text);
+}
+
+/* HEADER */
+
+.game-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto 40px;
+}
+
+.eyebrow {
+  margin: 0 0 14px;
+  color: var(--color-purple-light);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-align: center;
+}
+
+.main-title {
+  margin: 0;
+  font-size: clamp(34px, 5vw, 62px);
+  font-weight: 900;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.main-title span {
+  color: var(--color-primary-light);
+  text-shadow: 0 0 25px #6366f1;
+}
+
+.subtitle {
+  margin: 15px 0 28px;
+  color: var(--color-text-secondary);
+  font-size: 15px;
+  text-align: center;
+}
+
+/* START GAME BUTTON */
+
+.start-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 0 auto;
+  padding: 15px 28px;
+  border: 1px solid #818cf8;
+  border-radius: 10px;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-purple));
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  box-shadow: var(--shadow-primary);
+  transition: transform var(--transition-default), box-shadow var(--transition-default);
+}
+
+.start-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 35px var(--color-border-primary);
+}
+
+.start-button i {
+  font-size: 17px;
+}
+
+/* VS */
+
+.battle-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  width: 100%;
+  margin-top: 35px;
+  text-align: center;
+}
+
+.line {
+  width: 80px;
+  height: 1px;
+  background: var(--color-border-primary);
+}
+
+.battle-label {
+  color: #c4b5fd;
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 3px;
+  white-space: nowrap;
+}
+
+.battle-label i {
+  color: var(--color-purple-light);
+  filter: drop-shadow(0 0 6px #9465ff);
+}
+
+/* TEAMS */
+
+.teams {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+/* FOOTER */
+
+.game-footer {
+  margin-top: 45px;
+  color: var(--color-text-muted);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+.game-footer p {
+  margin: 0;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+  .app {
+    padding: 30px 14px;
+  }
+
+  .eyebrow {
+    font-size: 9px;
+    letter-spacing: 2px;
+  }
+
+  .subtitle {
+    font-size: 13px;
+  }
+
+  .battle-heading {
+    gap: 10px;
+  }
+
+  .line {
+    width: 35px;
+  }
+
+  .battle-label {
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+
+  .game-footer {
+    font-size: 9px;
+    letter-spacing: 2px;
+  }
+}

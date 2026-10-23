@@ -1,0 +1,48 @@
+
+:root {
+  /* Main backgrounds */
+  --color-bg: #080b18;
+  --color-bg-secondary: #11132b;
+  --color-surface: #f4f6fb;
+  --color-white: #ffffff;
+
+  /* Primary colors */
+  --color-primary: #4f46e5;
+  --color-primary-light: #818cf8;
+  --color-purple: #7c3aed;
+  --color-purple-light: #a78bfa;
+
+  /* Text colors */
+  --color-text: #f8fafc;
+  --color-text-dark: #252b48;
+  --color-text-secondary: #94a3b8;
+  --color-text-muted: #64748b;
+
+  /* Borders */
+  --color-border: #e5e7eb;
+  --color-border-primary: #818cf8;
+
+  /* Pokémon card */
+  --color-card-bg: #ffffff;
+  --color-card-text: #222222;
+  --color-card-exp: #333333;
+  --color-card-type-bg: #e8f3ff;
+  --color-card-type-text: #2563eb;
+
+  /* Game status */
+  --color-win: #15803d;
+  --color-win-bg: #dcfce7;
+  --color-lose: #dc2626;
+  --color-lose-bg: #fee2e2;
+  --color-draw: #92400e;
+  --color-draw-bg: #fef3c7;
+
+  /* Effects */
+  --shadow-card: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-card-hover: 0 8px 20px rgba(0, 0, 0, 0.15);
+  --shadow-primary: 0 0 25px #4f46e555;
+
+
+  /* Transitions */
+  --transition-default: 0.3s ease;
+}

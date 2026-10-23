@@ -1,0 +1,90 @@
+
+.team {
+  width: 100%;
+  margin: 0;
+  padding: 24px;
+  border-radius: 16px;
+  background-color: var(--color-surface);
+  box-sizing: border-box;
+}
+
+.teamHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.title {
+  margin: 0;
+  font-size: 28px;
+  color: var(--color-text-dark);
+}
+
+.status {
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.win {
+  background-color: var(--color-win-bg);
+  color: var(--color-win);
+}
+
+.lose {
+  background-color: var(--color-lose-bg);
+  color: var(--color-lose);
+}
+
+.draw {
+  background-color: var(--color-draw-bg);
+  color: var(--color-draw);
+}
+
+.cards {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 16px;
+  width: 100%;
+}
+
+.cards > * {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.totalExp {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-text-dark);
+}
+
+@media (max-width: 700px) {
+  .team {
+    padding: 16px;
+  }
+
+  .cards {
+    flex-wrap: wrap;
+  }
+
+  .cards > * {
+    flex: 1 1 calc(50% - 16px);
+    max-width: calc(50% - 8px);
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+  .totalExp {
+    font-size: 18px;
+  }
+}
